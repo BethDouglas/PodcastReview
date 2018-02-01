@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using PodcastReview.Data;
 using PodcastReview.Web.Models;
 
 namespace PodcastReview.Web.Controllers
