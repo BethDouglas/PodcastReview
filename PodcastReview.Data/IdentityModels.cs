@@ -32,7 +32,6 @@ namespace PodcastReview.Data
             return new ApplicationDbContext();
         }
         public DbSet<Review> Reviews { get; set; }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -43,6 +42,7 @@ namespace PodcastReview.Data
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
         }
+
     }
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
