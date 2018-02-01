@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PodcastReview.Contracts;
 using PodcastReview.Data;
 using PodcastReview.Models;
 
 namespace PodcastReview.Services
 {
-    class ReviewService
+    class ReviewService : IReviewService
     {
 
         private readonly Guid _userId;

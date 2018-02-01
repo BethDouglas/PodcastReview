@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
+using PodcastReview.Contracts;
 using PodcastReview.Models;
 
 namespace PodcastReview.Web.Controllers
@@ -130,5 +132,4 @@ namespace PodcastReview.Web.Controllers
             return RedirectToAction("Index");
         }
     }
-}
 }

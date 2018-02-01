@@ -263,6 +263,7 @@
     <Content Include="Views\Review\Details.cshtml" />
     <Content Include="Views\Review\Edit.cshtml" />
     <Content Include="Views\Review\ViewAll.cshtml" />
+    <Content Include="Views\Review\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +282,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PodcastReview.Contracts\PodcastReview.Contracts.csproj">
+      <Project>{4AEE22DB-9D46-495B-AC95-70E6F6BF11BC}</Project>
+      <Name>PodcastReview.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PodcastReview.Data\PodcastReview.Data.csproj">
       <Project>{985e01ba-3dd3-4a39-adb9-34fde0d01ae9}</Project>
       <Name>PodcastReview.Data</Name>
