@@ -15,21 +15,18 @@ namespace PodcastReview.Data
         [Required]
         public Guid OwnerId { get; set; }
 
-        [Required]
         public string UserName { get; set; }
 
         [Required]
         [MaxLength(200)]
         public string PodcastTitle { get; set; }
 
-        [MaxLength(200)]
-        public string Episode { get; set; }
-
-        [Range(1, 5)]
+        [Range(1, 5, ErrorMessage = "Rating must be between 1 and 5")]
         public int Rating { get; set; }
 
         [Required]
         [MaxLength(2000)]
+        [Display(Name = "Review")]
         public string Content { get; set; }
 
         public string FavEpisodes { get; set; }

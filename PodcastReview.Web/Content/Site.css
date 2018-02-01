@@ -20,5 +20,26 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 500px;
+}
+
+.navbar-fixed-bottom {
+    background-color: white;
+}
+
+.panel-heading {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.panel-body {
+    box-shadow: 3px 3px 1px 1px rgba(159, 159, 160, .2);
+}
+
+#fav-ep {
+    white-space: pre-line;
+}
+
+.panel-heading {
+    box-shadow: 3px 0px 1px 1px rgba(159, 159, 160, .2);
 }
