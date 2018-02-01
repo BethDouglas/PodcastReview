@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using PodcastReview.Contracts;
 using PodcastReview.Models;
+using PodcastReview.Services;
 
 namespace PodcastReview.Web.Controllers
 {

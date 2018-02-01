@@ -9,7 +9,7 @@ using PodcastReview.Models;
 
 namespace PodcastReview.Services
 {
-    class ReviewService : IReviewService
+    public class ReviewService : IReviewService
     {
 
         private readonly Guid _userId;
