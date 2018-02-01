@@ -54,10 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PodcastReview.Data\PodcastReview.Data.csproj">
+      <Project>{985e01ba-3dd3-4a39-adb9-34fde0d01ae9}</Project>
+      <Name>PodcastReview.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PodcastReview.Models\PodcastReview.Models.csproj">
+      <Project>{9194d57c-eb04-41c6-bd63-4561d6fd3f54}</Project>
+      <Name>PodcastReview.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
