@@ -9,6 +9,17 @@
     padding-right: 15px;
 }
 
+#page-wrapper{
+    padding: 30px;
+}
+
+.microphone {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
