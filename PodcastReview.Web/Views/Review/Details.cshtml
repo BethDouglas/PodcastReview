@@ -4,13 +4,12 @@
 @{
     ViewBag.Title = "Details";
 }
-<div>
-    <div>
+
         <div class="row">
             <div class="col-md-8">
                 <div class="panel panel-yellow">
                     <div class="panel-heading">
-                        <h4><strong>@Html.DisplayFor(model => model.PodcastTitle)</strong></h4>
+                        <h4>@Html.DisplayFor(model => model.PodcastTitle)</h4>
                     </div>
                     <div class="panel-body">
                         @Html.DisplayFor(model => model.Content)
@@ -22,7 +21,7 @@
             <div class="col-md-4">
                 <div class="panel panel-yellow">
                     <div class="panel-heading">
-                        <h4><strong>@Html.DisplayNameFor(model => model.FavEpisodes)</strong></h4>
+                        <h4>@Html.DisplayNameFor(model => model.FavEpisodes)</h4>
                     </div>
                     <div class="panel-body" id="fav-ep">
                         @Html.DisplayFor(model => model.FavEpisodes)
@@ -40,8 +39,7 @@
                 </h6>
             </div>
         </div>
-    </div>
-    <div>
+
         <p>
             @if (User.Identity.IsAuthenticated && (Guid.Parse(User.Identity.GetUserId()) == Model.UserId))
             {
