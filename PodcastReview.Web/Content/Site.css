@@ -1,24 +1,72 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 50px;
 }
 
-#page-wrapper{
-    padding: 30px;
+.nav {
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: #999999;
 }
 
 .microphone {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     display: block;
     margin: auto;
+    position: relative;
+    padding-top: 20px;
 }
+
+.bottom-text {
+    position: absolute;
+    top: 90%;
+    left: 18%;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    color: #999999;
+}
+
+    .bottom-text a {
+        text-decoration: none;
+        color: #999999;
+        cursor: pointer;
+    }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -38,11 +86,6 @@ textarea {
     background-color: white;
 }
 
-.panel-heading {
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
 .panel-body {
     box-shadow: 3px 3px 1px 1px rgba(159, 159, 160, .2);
 }
@@ -52,5 +95,11 @@ textarea {
 }
 
 .panel-heading {
+    padding-top: 1px;
+    padding-bottom: 1px;
     box-shadow: 3px 0px 1px 1px rgba(159, 159, 160, .2);
+}
+
+.panel {
+    padding-top: 20px;
 }

@@ -10,8 +10,8 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Edit Your Review</h4>
-        <hr />
+        <div class="col-md-2"></div>
+        <h3>Edit Your Review</h3>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ReviewId)
 
@@ -49,12 +49,12 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-primary btn-md" />
             </div>
         </div>
     </div>
 }
-
+<div class="col-md-2"></div>
 <div>
     @Html.ActionLink("Back to My Reviews", "Index") |
     @Html.ActionLink("Back to All Reviews", "ViewAll")
