@@ -3,20 +3,21 @@
     ViewBag.Title = "The Podcast Review";
 }
 
-<div class="row">
+
     <div class="col-md-12">
-        <a href=""><img class="microphone" src="https://i.imgur.com/wHwnqmm.jpg" title="source: pexels.com" /></a>
+        <div><a href=""><img class="microphone" src="https://i.imgur.com/wHwnqmm.jpg" title="source: pexels.com" /></a>
         @if (User.Identity.IsAuthenticated)
         {
-            <span class="bottom-text"><a href="/Review/ViewAll">Find new podcasts, </a><a href="/Review/Create">review podcasts.</a></span>
+            <p class="bottom-text"><a href="/Review/ViewAll">Find new podcasts, </a><a href="/Review/Create">review podcasts.</a></p>
         }
         
         else 
         {
-            <span class="bottom-text"><a href="/Review/ViewAll">Find new podcasts, </a>review podcasts.</span>
+            <p class="bottom-text"><a href="/Review/ViewAll">Find new podcasts, </a>review podcasts.</p>
         }
+        </div>
     </div>
-</div>
+
 <div class="row">
     <div class="col-md-1"></div>
         <div class="col-md-7">
